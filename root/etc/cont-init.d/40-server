@@ -212,8 +212,8 @@ if [ ! -f /config/server.cfg ]; then
     echo 'set bot_nochat "1"' >> /config/server.cfg
     echo 'set bot_rocketjump "0"' >> /config/server.cfg
     echo 'set bot_minplayers "'$QJS_BOT_MINPLAYERS'"' >> /config/server.cfg
-    echo 'addbot ca$hN1nja '$QJS_BOT_SKILL >> /config/server.cfg
-    echo 'addbot ba$hN1nja '$QJS_BOT_SKILL >> /config/server.cfg
+    echo 'addbot daemia '$QJS_BOT_SKILL >> /config/server.cfg
+    echo 'addbot grunt '$QJS_BOT_SKILL >> /config/server.cfg
     echo 'addbot major '$QJS_BOT_SKILL >> /config/server.cfg
     echo 'addbot stripe '$QJS_BOT_SKILL >> /config/server.cfg
     echo 'addbot visor '$QJS_BOT_SKILL >> /config/server.cfg
