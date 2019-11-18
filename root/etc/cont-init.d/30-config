@@ -14,4 +14,4 @@ echo '{ "content": "content.quakejs.com" }' > /app/quakejs/bin/web.json
 # permissions
 chown -R abc:abc \
 	/config \
-	/app/quakejs
+	/app/quakejs/

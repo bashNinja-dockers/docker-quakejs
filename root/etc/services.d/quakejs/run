@@ -2,5 +2,7 @@
 
 cd /app/quakejs || exit
 
+chown -R abc:abc /app/quakejs/
+
 NODE_ENV=production exec \
 	s6-setuidgid abc node build/ioq3ded.js +set fs_game $QJS_FS_GAME +set dedicated $QJS_DEDICATED +exec $QJS_SERVER_CONFIG
