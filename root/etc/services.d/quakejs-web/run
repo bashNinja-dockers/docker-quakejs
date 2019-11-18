@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+cd /app/quakejs || exit
+
+NODE_ENV=production exec \
+	s6-setuidgid root node bin/web.js --config ./web.json

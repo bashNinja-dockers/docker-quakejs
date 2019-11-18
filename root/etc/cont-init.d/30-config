@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bash
+
+i=/app/quakejs/configs
+[[ -e "$i" && ! -L "$i" && -e /config/"$(basename "$i")" ]] && \
+	rm -Rf "$i" && \
+	ln -s /config/"$(basename "$i")" "$i"
+[[ -e "$i" && ! -L "$i" ]] && \
+	mv "$i" /config/"$(basename "$i")" && \
+	ln -s /config/"$(basename "$i")" "$i"
+
+# configure
+echo '{ "content": "content.quakejs.com" }' > /app/quakejs/bin/web.json
+
+# permissions
+chown -R abc:abc \
+	/config \
+	/app/quakejs
