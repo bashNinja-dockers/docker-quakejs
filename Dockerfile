@@ -6,6 +6,8 @@ ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="bashNinja"
 
+ENV PORT=8080
+
 RUN \
  echo "**** install build env ****" && \
  apt-get update && \
