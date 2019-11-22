@@ -9,7 +9,7 @@ i=/app/quakejs/configs
 	ln -s /config/"$(basename "$i")" "$i"
 
 # configure
-echo '{ "content": "content.quakejs.com", "port": $PORT }' > /app/quakejs/bin/web.json
+echo "{ \"content\": \"content.quakejs.com\", \"port\": $PORT }" > /app/quakejs/bin/web.json
 
 # permissions
 chown -R abc:abc \
